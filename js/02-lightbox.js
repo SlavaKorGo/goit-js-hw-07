@@ -11,13 +11,6 @@ const items = galleryItems.map (item => {
     const galleryBox = document.querySelector('.gallery')
     galleryBox.innerHTML = items;
 
-    // galleryBox.addEventListener('click', onGalleryListBox);
- 
-    // function onGalleryListBox (e) {
-    // e.preventDefault();
-    
-    // }
-
     var lightbox = new SimpleLightbox(".gallery a", {
       captionsData: "alt",
       captionPosition: "bottom",

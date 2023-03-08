@@ -19,6 +19,9 @@ galleryBox.innerHTML = items;
 galleryBox.addEventListener('click', onLinkClick);
 
 function onLinkClick(e) {
+  if (e.target.nodeName !== 'IMG'){
+    return
+  }
     e.preventDefault();
 	const instance = basicLightbox.create(`
 		<img width="1400" height="900" src="${e.target.dataset.source}">
